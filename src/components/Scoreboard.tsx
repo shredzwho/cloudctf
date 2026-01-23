@@ -30,11 +30,11 @@ const mockTeams: Team[] = [
 
 const Scoreboard = () => {
   return (
-    <div style={{ padding: '20px', height: '100%', overflowY: 'auto' }}>
+    <div style={{ padding: '20px', paddingLeft: '10px', height: '100%', overflowY: 'auto' }}>
       <table style={{ 
         width: '100%', 
         borderCollapse: 'collapse', 
-        fontFamily: "'VT323', monospace",
+        fontFamily: "'Unifont', monospace",
         fontSize: '1.1rem'
       }}>
         <thead>
@@ -50,7 +50,7 @@ const Scoreboard = () => {
             <tr 
               key={team.rank} 
               style={{ 
-                backgroundColor: team.isUserTeam ? '#ccff00' : 'transparent',
+                backgroundColor: team.isUserTeam ? '#AFEC33' : 'transparent',
                 height: '30px'
               }}
             >

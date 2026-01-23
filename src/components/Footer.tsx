@@ -7,7 +7,7 @@ const Footer = () => {
       textAlign: 'center',
       borderTop: '1px solid #ccc',
       marginTop: 'auto',
-      fontFamily: "'VT323', monospace",
+      fontFamily: "'Unifont', monospace",
       color: '#666'
     }}>
       <p>&copy; 2026 Google CTF. All rights reserved.</p>

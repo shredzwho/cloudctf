@@ -16,9 +16,9 @@ const data = [
 
 const RightPanel = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', borderLeft: '1px solid #000' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
       {/* Top Teams Graph Section */}
-      <div style={{ flex: 2, display: 'flex', flexDirection: 'column', borderBottom: '1px solid #000' }}>
+      <div style={{ flex: 2, display: 'flex', flexDirection: 'column' }}>
         <div style={{ 
           padding: '5px 10px', 
           borderBottom: '1px solid #000', 
@@ -45,29 +45,9 @@ const RightPanel = () => {
         </div>
       </div>
 
-      {/* Team Stats Section */}
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-        <div style={{ 
-          padding: '5px 10px', 
-          borderBottom: '1px solid #000', 
-          backgroundColor: '#e0e0e0',
-          fontSize: '0.9rem'
-        }}>
-          TEAM STATS
-        </div>
-        <div style={{ padding: '20px' }}>
-          <div style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Friendly Maltese Citizens</div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
-            {/* Mock stats icons */}
-            <div>φ P P P P P P</div>
-            <div>? P P P P P</div>
-            <div>* P P P P P P P</div>
-            <div>« P P P P P P P</div>
-            <div>@ P [] P P P P</div>
-          </div>
-        </div>
-      </div>
     </div>
+
+    
   );
 };
 

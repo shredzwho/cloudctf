@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Google CTF Scoreboard",
+  title: "CLOUD CLUB CTF SCOREBOARD",
   description: "Friendly Maltese Citizens Scoreboard",
+  
 };
 
 export default function RootLayout({

@@ -1,33 +1,23 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --retro-bg: #f0f0f0;
+  --retro-text: #000000;
+  --retro-green: #ccff00; /* Lime green highlight */
+  --retro-gray: #e0e0e0;
+  --retro-border: 1px solid #000;
+  --retro-border-dashed: 1px dashed #000;
+  --retro-border-dotted: 1px dotted #000;
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  background-color: var(--retro-bg);
+  color: var(--retro-text);
+  height: 100%;
+  overflow: hidden; /* Prevent full page scroll, handle in components */
 }
 
 a {
@@ -35,8 +25,36 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+* {
+  box-sizing: border-box;
+}
+
+/* Custom Scrollbar for retro feel */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-left: 1px solid #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border: 1px solid #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Utility for pixelated borders if needed */
+.pixel-border {
+  box-shadow: 
+    -2px 0 0 0 #000,
+    2px 0 0 0 #000,
+    0 -2px 0 0 #000,
+    0 2px 0 0 #000;
+  margin: 2px;
 }
